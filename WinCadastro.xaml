@@ -1,0 +1,102 @@
+﻿<Window x:Class="ATVD01E02.WinCadastro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATVD01E02"
+        mc:Ignorable="d"
+        Title="WinCadastro" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="/Imagens/padrao.jpg"/>
+    </Window.Background>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Cadastro" FontSize="26" Margin="0 20" HorizontalAlignment="Center"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="20 0">
+
+                <Label Content="Dados Pessoais" FontSize="22"/>
+                <Label Content="Nome"/>
+                <TextBox x:Name="txtbNome" Padding="6" BorderBrush="Black">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <Label Content="Data de Nascimento"/>
+                <DatePicker x:Name="dataNascimento" Padding="6" Foreground="Black"  BorderBrush="Black">
+                    <DatePicker.Background>
+                        <ImageBrush/>
+                    </DatePicker.Background>
+                </DatePicker>
+                <Label Content="CPF"/>
+                <TextBox x:Name="txtbCpf" Padding="6"  BorderBrush="Black">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <Label Content="RG"/>
+                <TextBox x:Name="txtRg" Padding="6" BorderBrush="Black">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <Label Content="Telefone"/>
+                <TextBox x:Name="txtbTelefone" Padding="6" BorderBrush="Black">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+
+                <Label Content="Dados Endereco" FontSize="22"/>
+                <Label Content="Estado"/>
+                <TextBox x:Name="txtbEstado" Padding="6" BorderBrush="Black">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <Label Content="Cidade"/>
+                <TextBox x:Name="txtbCidade" Padding="6"  BorderBrush="Black" >
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <Label Content="Bairro"/>
+                <TextBox x:Name="txtbBairro" Padding="6" BorderBrush="Black">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <Label Content="Rua"/>
+                <TextBox x:Name="txtbRua" Padding="6" BorderBrush="Black">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+                <Label Content="N° da Casa"/>
+                <TextBox x:Name="txtbNumCasa" Padding="6" BorderBrush="Black">
+                    <TextBox.Background>
+                        <ImageBrush/>
+                    </TextBox.Background>
+                </TextBox>
+            </StackPanel>
+
+        </Grid>
+
+
+    </Grid>
+</Window>
